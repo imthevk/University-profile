@@ -25,7 +25,7 @@ export async function generateMetadata({}, parent) {
 }
 
 const NewsApiContent = async () => {
-  let receipes;
+  let receipes = [];
   try {
     const response = await fetch(`https://dummyjson.com/recipes`);
     const data = await response.json();
@@ -49,35 +49,44 @@ const NewsApiContent = async () => {
         </span>
       </div>
       <div className="flex md:justify-between gap-3 flex-wrap w-[90vw] mx-auto">
-        {receipes.map((receipe) => {
-          return (
-            <div
-              key={receipe?.id}
-              className="card rounded-none bg-base-100 w-40 lg:w-80 shadow-xl mb-5"
-            >
-              <figure>
-                <Image
-                  src={receipe?.image}
-                  alt="receipe image"
-                  width={300}
-                  height={200}
-                />
-              </figure>
-              <div className="card-body pl-4">
-                <h2 className="card-title p-2 bg-[#EBEBFF] w-full text-sm">
-                  {receipe?.name}
-                </h2>
-                <p className="text-center text-primary-500">INGREDIENTS</p>
-                <p className="text-xs lg:text-lg font-bold line-clamp-1 lg:line-clamp-2">
-                  {receipe.ingredients.join(",")}
-                </p>
-                {/* <div className="card-actions justify-end">
+        {receipes.length > 0 ? (
+          receipes.map((receipe) => {
+            return (
+              <div
+                key={receipe?.id}
+                className="card rounded-none bg-base-100 w-40 lg:w-80 shadow-xl mb-5"
+              >
+                <figure>
+                  <Image
+                    src={receipe?.image}
+                    alt="receipe image"
+                    width={300}
+                    height={200}
+                  />
+                </figure>
+                <div className="card-body pl-4">
+                  <h2 className="card-title p-2 bg-[#EBEBFF] w-full text-sm">
+                    {receipe?.name}
+                  </h2>
+                  <p className="text-center text-primary-500">INGREDIENTS</p>
+                  <p className="text-xs lg:text-lg font-bold line-clamp-1 lg:line-clamp-2">
+                    {receipe.ingredients.join(",")}
+                  </p>
+                  {/* <div className="card-actions justify-end">
                 <button className="btn btn-primary">Buy Now</button>
               </div> */}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })
+        ) : (
+          <div className="flex w-52 flex-col gap-4">
+            <div className="skeleton h-32 w-full"></div>
+            <div className="skeleton h-4 w-28"></div>
+            <div className="skeleton h-4 w-full"></div>
+            <div className="skeleton h-4 w-full"></div>
+          </div>
+        )}
       </div>
     </>
   );
