@@ -348,7 +348,7 @@ function Overview() {
                 </span>
               </h1>
             </div>
-            <div className="flex gap-4 flex-wrap mb-4">
+            <div className="flex lg:justify-between gap-4 flex-wrap mb-4">
               <InfoCard
                 src="/assets/book.svg"
                 heading={"Library"}

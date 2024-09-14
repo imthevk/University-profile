@@ -4,7 +4,7 @@ import React from "react";
 function InfoCard({ src, className, heading, para }) {
   return (
     <div
-      className={`flex justify-center items-center gap-3 p-3 w-[44%] bg-[#EEEDF7] ${className}`}
+      className={`flex justify-center items-center gap-3 p-3 w-[44%] lg:p-9  bg-[#EEEDF7] ${className}`}
     >
       <div className="bg-white p-1">
         <Image src={src} alt="home" width={32} height={32} />

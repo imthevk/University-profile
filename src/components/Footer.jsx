@@ -215,7 +215,7 @@ export default function Footer() {
           <input
             type="email"
             placeholder="Enter your mail ID"
-            className="border border-gray-300 rounded-l-lg p-2 w-3/5 lg:w-full md:w-64 focus:outline-none focus:border-purple-600"
+            className="border border-gray-300 rounded-l-lg p-2 w-3/5 md:w-64 focus:outline-none focus:border-purple-600"
           />
           <button className="bg-purple-600 text-white font-semibold px-4 rounded-lg hover:bg-purple-800">
             Apply Now

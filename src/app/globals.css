@@ -53,7 +53,7 @@ body {
 @media (min-width: 768px) {
   .hero_bg {
     height: 25em; /* Slightly taller for tablets/laptops */
-    width: 80vw; /* Narrower width for larger screens */
+    width: 90vw; /* Narrower width for larger screens */
     background-position: unset;
   }
 }

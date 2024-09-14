@@ -5,7 +5,7 @@ export default function SearchBox({ className }) {
     >
       <input
         type="text"
-        placeholder="Search..."
+        placeholder="Search Courses"
         className="w-5/6 pl-3 pr-4  text-gray-700 bg-white focus:outline-none border-gray-300 rounded-md"
       />
       <svg

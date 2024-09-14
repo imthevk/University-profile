@@ -5,7 +5,7 @@ import { Menu } from ".";
 
 function Navbar() {
   return (
-    <div className="h-16 md:h-32 bg-bg-50 text-sm p-4 md:pl-10 text-primary-500 flex items-center justify-between font-bold ">
+    <div className="h-16 md:h-20 bg-bg-50 text-sm p-4 md:pl-10 text-primary-500 flex items-center justify-between font-bold ">
       <div className="flex items-center gap-2 ">
         <Image src={Logo} width={20} height={20} alt="logo" />
         <p>afterschool</p>
