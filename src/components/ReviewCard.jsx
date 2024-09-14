@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ReviewCard() {
   return (
-    <div className="border border-transparent rounded-lg p-4 w-[300px] md:w-1/3 mx-auto shadow-sm bg-purple-50 flex flex-col space-y-2">
+    <div className="border border-transparent rounded-lg p-4 w-[300px] lg:w-[360px] lg:h-[360px] mx-auto shadow-sm bg-[#EBEBFF] flex flex-col space-y-2 lg:space-y-12 mb-7">
       {/* Quote Icon */}
       <div className="text-purple-700 text-3xl">&#10077;</div>
 

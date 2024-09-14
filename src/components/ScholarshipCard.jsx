@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function ScholarshipCard() {
   return (
-    <div className="border border-gray-200 rounded-lg p-4 w-11/12 md:w-1/3 mx-auto shadow-sm flex flex-col justify-between mb-4">
+    <div className="border border-gray-200 rounded-lg p-4 w-11/12 md:w-[300px] mx-auto shadow-sm flex flex-col justify-between mb-4">
       {/* Header */}
       <div className="flex justify-between items-start mb-4">
         {/* Card Title */}
-        <h2 className="text-lg font-semibold">
+        <h2 className="text-sm md:text-lg font-semibold">
           Gamuda Scholarship 2024 –
           <br />
           Leading Tomorrow’s Talents
@@ -22,11 +22,11 @@ export default function ScholarshipCard() {
       </div>
 
       {/* Labels */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+      <div className="flex text-xs justify-between gap-2 mb-4">
+        <span className="bg-[#EBEBFF] text-gray-700 px-2 py-2 rounded-full">
           Malaysia/ Overseas
         </span>
-        <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">
+        <span className="bg-[#EBEBFF] text-gray-700 px-2 py-2 rounded-full">
           Deadline: 30 Apr 2024
         </span>
       </div>
@@ -60,7 +60,7 @@ export default function ScholarshipCard() {
           </svg>
         </button>
         {/* Arrow Icon */}
-        <button className="bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-full">
+        <button className="bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-lg">
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
             <path
               fillRule="evenodd"

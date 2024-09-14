@@ -48,11 +48,28 @@ body {
   background-image: url("https://www.wabashvalley.com/wp-content/uploads/2022/05/01-top-college-landscape-design-trends.jpg");
   background-position: center;
   background-size: cover;
-  height: 20em;
-  width: 90vw;
 }
 
-@media (max-width: 764px) {
+@media (min-width: 768px) {
+  .hero_bg {
+    height: 25em; /* Slightly taller for tablets/laptops */
+    width: 80vw; /* Narrower width for larger screens */
+    background-position: unset;
+  }
+}
+
+/* Styling for desktops */
+@media (min-width: 1024px) {
+  .hero_bg {
+    height: 30em; /* Taller for desktop view */
+    width: 90vw; /* Even narrower for desktop view */
+    background-position: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
   .hero_bg {
     background-image: url("https://www.wabashvalley.com/wp-content/uploads/2022/05/01-top-college-landscape-design-trends.jpg");
     background-position: inherit;
